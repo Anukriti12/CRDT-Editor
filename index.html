@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRDT Editor</title>
+  <script type="text/javascript" src="./dist/quill.bundle.js" async></script>
+  <link rel="stylesheet" href="./quill.css" async defer />
+  <link rel="stylesheet" href="//cdn.quilljs.com/1.3.6/quill.snow.css" async defer />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" async defer />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css"
+    async defer />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div style="padding: 10px;">
+
+    <a href="#" class="float" id="y-connect-btn">
+      <i class="fa fa-link my-float"></i>
+    </a>
+
+    <div class="float d-flex justify-content-center" style="right: 200px;width: 250px;">
+      <div class="d-flex align-middle">
+        <input id="roomid" style="background-color: transparent; color: white;border: none;" value="ayush">
+      </div>
+    </div>
+    
+    <a href="#" class="float" id="y-update-room-btn" style="right: 120px;">
+      <i class="fa fa-cogs my-float"></i>
+    </a>
+
+    <h1 style="font-family: 'Roboto', sans-serif;">CRDT</h1>
+    <h4>Current room: <i id="curroom"></i></h4>
+  </div>
+</body>
+
+</html>
